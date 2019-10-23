@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{787E89C1-5170-4297-93DB-562905D9722C}</ProjectGuid>
+    <ProjectGuid>{5340E04E-9E55-4157-A9B8-761C8D159E4D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Cripto_Lab1_1</RootNamespace>
-    <AssemblyName>Cripto_Lab1_1</AssemblyName>
+    <RootNamespace>Cripto_Lab1</RootNamespace>
+    <AssemblyName>Cripto_Lab1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

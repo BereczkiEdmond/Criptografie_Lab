@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Cripto_Lab1_1
+namespace Cripto_Lab1
 {
     class Program
     {
@@ -31,7 +31,7 @@ namespace Cripto_Lab1_1
 
 
         abstract class Crypt
-        {  
+        {
             public abstract string Encriptare(string s);
             public abstract string Decriptare(string s);
             public abstract string Criptoanaliza(string s);
@@ -174,7 +174,7 @@ namespace Cripto_Lab1_1
                 StreamReader sr = new StreamReader(file);
                 StringBuilder sb = new StringBuilder();
 
-                while(!sr.EndOfStream)
+                while (!sr.EndOfStream)
                 {
                     char c = Convert.ToChar(sr.Read());
                     while (c != '\n')
@@ -182,7 +182,7 @@ namespace Cripto_Lab1_1
                         sb.Append(c);
                         c = Convert.ToChar(sr.Read());
                     }
-                    
+
                     words.Add(sb.ToString().ToUpper());
                     sb.Clear();
                 }
@@ -200,12 +200,12 @@ namespace Cripto_Lab1_1
             {
                 List<string> words = new List<string>();
                 FillList(words, @"wlist_match1.txt");
-                
+
                 string word = StabilirePrimulCuvant(s);
-                
+
                 int i = 0;
                 string word2 = DecriptareEfectiva(word, i);
-                
+
                 while (!Exista(word2, words))
                 {
                     Console.WriteLine(word2); Console.ReadKey();
@@ -214,7 +214,7 @@ namespace Cripto_Lab1_1
                 }
 
                 Console.WriteLine("Cuvant cu sens: " + word2);
-                
+
                 return DecriptareEfectiva(s, i);
             }
         }
@@ -335,7 +335,8 @@ namespace Cripto_Lab1_1
                 bool ok = false;
                 int n = L.caracter.Length;
 
-                do{
+                do
+                {
                     ok = true;
                     for (int i = 0; i < n - 1; i++)
                         if (L.aparitie[i] < L.aparitie[i + 1])
@@ -346,7 +347,7 @@ namespace Cripto_Lab1_1
                         }
                 } while (!ok);
 
-                
+
             }
 
             private void Schimba<T>(ref T a, ref T b)
@@ -401,7 +402,7 @@ namespace Cripto_Lab1_1
                     int j = 0;
                     for (char c = 'A'; c <= 'Z'; c++)
                     {
-                        permutari[i,j] = c;
+                        permutari[i, j] = c;
                         j++;
                     }
                 }
@@ -413,9 +414,9 @@ namespace Cripto_Lab1_1
 
                 for (i = 0; i < cheie; i++)
                     FisherYates(permutari, i);
-                
+
                 StringBuilder sb = new StringBuilder();
-                
+
                 for (i = 0; i < s.Length; i++)
                 {
                     if (j == cheie)
@@ -484,7 +485,8 @@ namespace Cripto_Lab1_1
             Crypt C = null;
 
             // meniu pentru alegerea algoritmului de criptare
-            do{
+            do
+            {
                 Console.WriteLine("Alegeti algoritmul: ");
                 Console.WriteLine("1. Cezar ");
                 Console.WriteLine("2. PlusN ");

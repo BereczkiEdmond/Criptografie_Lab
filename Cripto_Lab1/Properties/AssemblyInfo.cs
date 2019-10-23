@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Cripto_Lab1_1")]
+[assembly: AssemblyTitle("Cripto_Lab1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Cripto_Lab1_1")]
+[assembly: AssemblyProduct("Cripto_Lab1")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("787e89c1-5170-4297-93db-562905d9722c")]
+[assembly: Guid("5340e04e-9e55-4157-a9b8-761c8d159e4d")]
 
 // Version information for an assembly consists of the following four values:
 //
