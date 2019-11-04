@@ -1,0 +1,7 @@
+C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Cripto_Lab1\Cripto_Lab1\bin\Debug\Cripto_Lab1.exe.config
+C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Cripto_Lab1\Cripto_Lab1\bin\Debug\Cripto_Lab1.exe
+C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Cripto_Lab1\Cripto_Lab1\bin\Debug\Cripto_Lab1.pdb
+C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Cripto_Lab1\Cripto_Lab1\obj\Debug\Cripto_Lab1.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Cripto_Lab1\Cripto_Lab1\obj\Debug\Cripto_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Cripto_Lab1\Cripto_Lab1\obj\Debug\Cripto_Lab1.exe
+C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Cripto_Lab1\Cripto_Lab1\obj\Debug\Cripto_Lab1.pdb
