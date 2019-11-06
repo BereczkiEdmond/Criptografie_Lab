@@ -12,3 +12,9 @@ C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Semestrul I\Criptografie\Cript
 C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Semestrul I\Criptografie\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\obj\Debug\Cripto_Lab2.csproj.CoreCompileInputs.cache
 C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Semestrul I\Criptografie\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\obj\Debug\Cripto_Lab2.exe
 C:\Users\pc\Desktop\Universitatea din Oradea\An 2\Semestrul I\Criptografie\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\obj\Debug\Cripto_Lab2.pdb
+C:\Users\horea\Source\Repos\HoreaOros\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\bin\Debug\Cripto_Lab2.exe.config
+C:\Users\horea\Source\Repos\HoreaOros\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\bin\Debug\Cripto_Lab2.exe
+C:\Users\horea\Source\Repos\HoreaOros\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\bin\Debug\Cripto_Lab2.pdb
+C:\Users\horea\Source\Repos\HoreaOros\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\obj\Debug\Cripto_Lab2.csprojAssemblyReference.cache
+C:\Users\horea\Source\Repos\HoreaOros\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\obj\Debug\Cripto_Lab2.exe
+C:\Users\horea\Source\Repos\HoreaOros\Criptografie_Lab\Cripto_Lab2\Cripto_Lab2\obj\Debug\Cripto_Lab2.pdb

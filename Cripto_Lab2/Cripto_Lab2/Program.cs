@@ -13,16 +13,23 @@ namespace Cripto_Lab2
         {
             public static string Citire(string file)
             {
-                StreamReader sr = new StreamReader(file);
-                return sr.ReadToEnd();
+                using (StreamReader sr = new StreamReader(file))
+                {
+                    return sr.ReadToEnd();
+                }
+                    
             }
 
             public static void Scriere(string file, string text)
             {
-                StreamWriter sw = new StreamWriter(file);
-                sw.WriteLine(text);
+                using (StreamWriter sw = new StreamWriter(file))
+                {
+                    sw.WriteLine(text);
+                    sw.Flush();
+                }
+                    
 
-                sw.Close();
+                //sw.Close();
             }
         }
 
@@ -48,12 +55,33 @@ namespace Cripto_Lab2
                     ID = id;
                 }
 
+                public  int this[char letter]
+                {
+                    get
+                    {
+                        for(int i = 0; i < CharSet.Length; i++)
+                            if (letter == CharSet[i])
+                            {
+                                return i;
+                            }
+                        return -1;
+                    }
+                }
                 public char Rotate(int start, int offset)
                 {
                     int aux = (start + offset) % CharSet.Length;
                     if (aux < 0)
                         aux = CharSet.Length + aux;
                     return CharSet[aux];
+                }
+                public override string ToString()
+                {
+                    StringBuilder sb = new StringBuilder();
+                    foreach (var ch in CharSet)
+                    {
+                        sb.Append(ch);
+                    }
+                    return sb.ToString();
                 }
             }
 
@@ -82,15 +110,16 @@ namespace Cripto_Lab2
                     D[i] = new Disc(alfabet, i);
                     FisherYates(D[i].CharSet);
                     key[i] = i;
-                }  
+                }                 
+                FisherYates(key);   // generarea ordinii aleatorie a discurilor
+
             }
 
             public override string Encriptare(string s)
             {
-                FisherYates(key);   // generarea ordinii aleatorie a discurilor
                 
                 StringBuilder sb = new StringBuilder();
-                offset = rnd.Next(1, n);    // adaugam o pozitie aleatoriu la textul clar
+                offset = rnd.Next(1, 26);    // adaugam o pozitie aleatoriu la textul clar
                                             // pentru a obtine textul criptat
                 int j, k = 0; char c;
                 for (int i = 0; i < s.Length; i++)
@@ -391,6 +420,8 @@ namespace Cripto_Lab2
 
         static void Main(string[] args)
         {
+
+           
             Crypt C; int opt;
 
             string text = Fisier.Citire("text_clar.txt");
